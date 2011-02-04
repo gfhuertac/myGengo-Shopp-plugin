@@ -1,0 +1,47 @@
+MyGengo plugin for Shopp (under Wordpress) – User guide
+
+YOU MUST have the mygengo plugin for wordpress installed before you can use this plugin. Please follow its guide before installing this plugin.
+
+Tested with wordpress 3.0.4 and shopp 1.7
+
+Installation
+
+To install myGengo for shopp, go to the administration of your blog, and open the ‘Plugins’ section. Then click on the ‘Add New’ button and on the ‘Upload’button. Once on that page, click ‘Choose File’ and select the file containing the myGengo shopp plugin (mygengo_shopp-1.0.zip in our case). Then add the plugin by clicking the ‘Add’ button.
+
+Once the plugin is uploaded you can select to Activate it immedialty. If you choose to do so, click on the ‘Activate plugin’ link. If everything goes fine, you will see a message saying that the plugin was activated and you are ready to use it.
+
+Initializing the plugin
+
+Before using the myGengo shopp plugin, you need to install and set up the myGengo plugin for wordpress. Read the mygengo_plugin-user_guide.pdf for details.
+
+Adding a translation job
+
+Currently you can add a job by translating a product, or by using short codes, as described in the mygengo_plugin-user_guide.pdf. Please refer to this guide for more details about the latter.
+
+Regarding the former, you can translate a product by going to ‘Shopp’ → ‘Products’. A list of products will be displayed. 
+
+Choose the product that you want to translate. At the product page, click on the ‘Translate’ button located at the MyGengo box. Accept the warning about leaving the page.
+
+This will take you to the order a new job page, filled-up with the information from the product. Now you can follow the traditional flow of a translation (please refer to mygengo_plugin-user_guide.pdf for more details)
+
+Once the job is approved you can leave it in the database or publish it. If you choose to leave it in the DB, you can use the short codes to add a translation without modifying your website. To do so, go to the product page, and add the div and short code as explained in mygengo_plugin-user_guide.pdf. In this example, we added a div called ‘post-1-content’, and a short code with attributes post_type="shopp_product-content", post_id="1", element_id="post-1-content" and include_text="1". The code for this is shown below.
+
+<div id="post-1-content"> LEAVE THE CONTENT HERE </div>
+[mygengo_st post_type="shopp_product-content" post_id="1" element_id="post-1-content" include_text="1"]
+
+After this is done, the user can visit the page of the product and add more translations or view existing ones.
+
+Publishing a job
+
+This plugin provides the user with product-related options on the right-hand side of the job preview page (please refer to the  mygengo_plugin-user_guide.pdf for more details).
+
+If the content is published as a translation of the existing product or as a new product, then it is added to the product list.
+
+Then the user can change the contents as she pleased.
+
+Note that this translation will appear alongside the original at the website. It is preferable to use short codes unless the owner have a multi language site, and he can accommodate each product to different language.
+
+
+UI elements
+
+This plugin uses the same UI elements of the mygengo plugin for wordpress. Please refer to  mygengo_plugin-user_guide.pdf for more details.
